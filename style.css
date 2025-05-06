@@ -1,0 +1,340 @@
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFC9DF;
+        height: 10000px;
+        width: auto;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tiles img {
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 45vw;
+    }
+
+    .logo img {
+        width: 90vw;
+    }
+
+    .scroll {
+        margin-top: 50vw;
+    }
+
+    .scroll img {
+        width: 15vw;
+    }
+
+
+    .nokori {
+        margin-top: 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nokori img {
+        width: 70vw;
+    }
+
+
+    .countdown {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* gap: 10px; */
+        padding: 20px;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    }
+
+    .item {
+        display: flex;
+        gap: 8px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .imagecontain {
+        background: white;
+        color: #123768;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        height: 400px;
+        min-width: 80px;
+    }
+
+    .countdown-item {
+        background: white;
+        color: #123768;
+        padding: 13px;
+        border-radius: 10px;
+        text-align: center;
+        width: 20vw;
+        border: 1px solid black;
+        /* min-width: 80px; */
+    }
+
+    .countdown-item span {
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .countdown-item label {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    .days {
+        background-color: #CFFBFF;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 79px;
+        border-radius: 7px;
+        margin-right: 6px;
+    }
+
+    .hours {
+        background-color: #CFFBFF;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 60px;
+        border-radius: 7px;
+        margin-right: 6px;
+    }
+
+    .seconds {
+        background-color: #D7FBFE;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 60px;
+        border-radius: 7px;
+    }
+
+    .in {
+        margin-top: 20vw;
+        background-color: #fff2dc;
+        width: 100vw;
+        height: 90vw;
+        border-radius: 50% 50% 0px 0px;
+        border-top: 1px solid black;
+    }
+
+    .contents img {
+        width: 55vw;
+        margin-top: 40px;
+    }
+
+    .tiles2 img {
+        width: 95vw;
+        margin-top: 5px;
+    }
+
+    .back {
+        background-color: #fff2dc;
+        width: 100vw;
+        height: 2000px;
+    }
+
+    .moveleft {
+        visibility: visible;
+        position: relative;
+        height: 90vw;
+        width: auto;
+        /* opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.8s ease;
+        z-index: 100; */
+    }
+
+    /* .moveleft.slidein.is-animated {
+        animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+       
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+        }
+        40%,100% {
+          opacity: 1;
+        }
+      } */
+
+    /* .moveleft.show {
+        opacity: 1;
+        transform: translateX(0);
+    }  */
+
+    .image {
+        position: absolute;
+
+    }
+
+    .search img {
+        width: 100vw;
+        margin-top: -20vw;
+        z-index: 1;
+    }
+
+    .search2 img {
+        width: 80vw;
+        z-index: 2;
+        margin-top: 13vw;
+        margin-left: 7vw;
+    }
+
+    .search3 img {
+        width: 28vw;
+        z-index: 3;
+    }
+
+    .search4 img {
+        width: 10vw;
+        z-index: 4;
+        margin-left: 60vw;
+    }
+    .btn-square-slant {
+        display: inline-block;
+        position: relative;
+        padding: 0.5em 1.4em;
+        text-decoration: none;
+        color: #fff2dc;
+    }
+
+    .btn-square-slant:before {
+        content: " ";
+        position: absolute;
+        bottom: -5px;
+        left: -1px;
+        width: 0;
+        height: 0;
+        border-width: 0 6px 6px 0px;
+        border-style: solid;
+        border-color: transparent;
+        /* border-bottom-color: #FFF; */
+    }
+
+    .btn-square-slant:after {
+        content: " ";
+        position: absolute;
+        top: -1px;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-width: 0px 6px 6px 0px;
+        border-style: solid;
+        /* border-color: #FFF; */
+        border-bottom-color: transparent;
+    }
+
+    .btn-square-slant:active:after,
+    .btn-square-slant:active:before {
+        content: none;
+        /*ボタンを押すと線が消える*/
+    }
+
+    .botton {
+        position: absolute;
+        z-index: 5;
+        background-color: #FFBED8;
+        height: 15vw;
+        width: 80vw;
+        border-radius: 12px;
+        box-shadow: 4px 4px 0px #BFB5A4;
+        padding-top: 3vw;
+    }
+
+    .btn1 {
+        margin-left: -27px;
+        margin-top: 60vw;
+    }
+
+    .btn-square-slant:active {
+        /*ボタンを押したとき*/
+        box-shadow: none;
+        -webkit-transform: translate(4px, 4px);
+        transform: translate(4px, 4px);
+    }
+
+
+    .feature {
+        height: 150vw;
+    }
+
+    .feature1 img {
+        width: 90vw;
+        margin-top: 12vw;
+    }
+
+    .greet {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .greet img {
+        width: 93vw;
+        display: flex;
+        margin-left: 7vw;
+    }
+
+    .greeting {
+        width: 73vw;
+        background-color: white;
+        margin-top: 18vw;
+        font-size: 3vw;
+        padding: 4vw;
+        height: 75vw;
+        z-index: 4;
+        box-shadow: 4px 4px 0px #BFB5A4;
+    }
+
+    .saho {
+        margin-left: 1vw;
+        width: 65vw;
+        font-size: 3vw;
+        float: right;
+    }
+
+    .name {
+        font-size: 3vw;
+        margin-top: 63vw;
+        margin-left: 30vw;
+    }
+
+    .btn2 {
+        margin-left: 5px;
+        margin-top: 100vw;
+    }
+
+    .greet1 img {
+        width: 55vw;
+        z-index: 3;
+        margin-top:1.5vw;
+    }
+
+    .greet2 img{
+        width:8vw;
+        z-index: 4;
+        margin-left: 62vw;
+        margin-top:1.2vw;
+    }
+
+
+}
