@@ -1,118 +1,464 @@
-<!DOCTYPE html>
-<html lang="ja">
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="common.js"></script>
-    <script type="text/javascript" src="slide.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFC9DF;
+        height: auto;
+        width: auto;
+    }
 
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    .center {
+        display: flex;
+        justify-content: center;
+    }
 
-</head>
+    .tiles img {
+        width: 100vw;
+    }
 
-<body>
-    <div class="tiles center">
-        <img src="img/tiles.png">
-    </div>
-    <div class="logo center">
-        <img src="img/logo.png">
-    </div>
-    <div class="scroll center">
-        <img src="img/scroll.png">
-    </div>
-    <div class="blank">
-        
-    </div>
-    <div class="nokori center">
-        <img src="img/nokori.png">
-    </div>
-    <div class="countdown">
-        <div class="item">
-            <div class="countdown-item"><span id="days">0</span><label>Days</label></div>
-            <div class="countdown-item"><span id="hours">0</span><label>Hours</label></div>
-            <div class="countdown-item"><span id="minutes">0</span><label>Minutes</label></div>
-            <div class="countdown-item"><span id="seconds">0</span><label>Seconds</label></div>
-        </div>
-    </div>
-    <section class="center">
-        <div class="in">
-            <div class="contents center">
-                <img src="img/contents.png">
-            </div>
-            <div class="tiles2 center">
-                <img src="img/tiles2.png">
-            </div>
+    .blank {
+        height:700px;
+    }
 
-        </div>
-    </section>
-    <div class="back">
-        <div class=" moveleft">
-            <div class="search image">
-                <img src="img/ichiran.png">
-            </div>
-            <div class="search2 center image">
-                <img src="img/search2.png">
-            </div>
-            <div class="center">
-                <a href="search.html" class="btn-square-slant botton btn1">
-                    <div class="search3 center image">
-                        <img src="img/search3.png">
-                    </div>
-                    <div class="search4 image">
-                        <img src="img/search4.png">
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="feature">
-            <div class="feature1 center">
-                <img src="img/feature.png">
-            </div>
+    .nokori {
+        margin-top: 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nokori img {
+        width: 80vw;
+    }
 
 
+    .countdown {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* gap: 10px; */
+        padding: 20px;
+    }
 
-        </div>
-        <div class="moveright">
-            <div class="greet image">
-                <img src="img/greet.png">
-            </div>
-            <div class="center">
-                <div class="greeting">
-                    <p class="saho image">
-                        この度は第63回雙葉祭ホームページをご覧くださり、誠にありがとうございます。
-                        ご来場の皆様に、私たちの努力の結晶をお楽しみいただけますよう、開催に向け、全校で力を合わせて準備を進めております。
-                        今年の統一テーマは『e’clat』、テーマカラーは『Ruby
-                        Glow』です。e’clatはフランス語で輝きや華やかさを意味し、瞬間に宿る光の美しさと儚さに、雙葉祭に向けてひたむきに歩み続ける私たちの姿を重ねました。そして、深紅のルビーが持つ情熱には、仲間との絆や雙葉祭への熱い想いが込められています。皆様のご来場を生徒一同、心よりお待ちしております。
-                    </p>
-                    <p class="name">
-                        第63回雙葉祭実行委員長
-                    </p>
-                </div>
-                <a href="theme.html" class="btn-square-slant botton btn2">
-                    <div class="greet1 center image">
-                        <img src="img/greet1.png">
-                    </div>
-                    <div class="greet2 image">
-                        <img src="img/search4.png">
-                    </div>
-                </a>
-            </div>
-        </div>
+    .item {
+        display: flex;
+        gap: 8px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .imagecontain {
+        background: white;
+        color: #123768;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        height: 400px;
+        min-width: 80px;
+    }
+
+    .countdown-item {
+        background: white;
+        color: #123768;
+        padding: 13px;
+        border-radius: 10px;
+        text-align: center;
+        width: 20vw;
+        border: 1px solid black;
+        /* min-width: 80px; */
+    }
+
+    .countdown-item span {
+        display: block;
+        font-size: 7vw;
+        font-weight: bold;
+        font-family: "Caprasimo", serif;
+        opacity: 100%;
+    }
+
+    .countdown-item label {
+        font-size: 14px;
+    }
+
+    .countdown img {
+        margin-top:2vw;
+        margin-bottom:-1vw;
+        height:5vw;
+    }
+    
+    .count img {
+        margin-top:2vw;
+        margin-bottom:-1vw;
+        height:3.5vw;
+    }
+    .left img {
+        margin-top:2vw;
+        margin-bottom:-1vw;
+        height:3.5vw;
+        margin-left:-1vw;
+    }
+
+    .days {
+        background-color: #ffffff;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 79px;
+        border-radius: 7px;
+        margin-right: 6px;
+    }
+
+    .hours {
+        background-color: #ffffff;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 60px;
+        border-radius: 7px;
+        margin-right: 6px;
+    }
+
+    .seconds {
+        background-color: #ffffff;
+        padding-top: 70px;
+        padding-bottom: 8px;
+        width: 60px;
+        border-radius: 7px;
+    }
+
+    .maeoki1 {
+        margin-top:30vw;
+    }
+
+    .maeoki1 img{
+        margin-top:20vw;
+        width:80%;
+        display: flex;
+        justify-content: center;
+        margin-left:10%;
+    }
+    .eclat img{
+        margin-top:20vw;
+        width:50%;
+        display: flex;
+        justify-content: center;
+        margin-left:25%;
+    }
+
+    .in {
+        margin-top: 20vw;
+        background-color: #fff2dc;
+        width: 100vw;
+        height: 90vw;
+        border-radius: 50% 50% 0px 0px;
+        border-top: 1px solid black;
+    }
+
+    .contents img {
+        width: 55vw;
+        margin-top: 40px;
+    }
+
+    .tiles2 img {
+        width: 95vw;
+        margin-top: 5px;
+    }
+
+    .back {
+        background-color: #fff2dc;
+        width: 100vw;
+        height: auto;
+        padding-bottom:100vw;
+    }
+
+    .moveleft {
+        visibility: visible;
+        position: relative;
+        height: 90vw;
+        width: auto;
+        /* opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.8s ease;
+        z-index: 100; */
+    }
+
+    /* .moveleft.slidein.is-animated {
+        animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+       
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+        }
+        40%,100% {
+          opacity: 1;
+        }
+      } */
+
+    /* .moveleft.show {
+        opacity: 1;
+        transform: translateX(0);
+    }  */
+
+    .image {
+        position: absolute;
+
+    }
+
+    .search img {
+        width: 100vw;
+        margin-top: -30vw;
+        z-index: 1;
+    }
+
+    .search2 img {
+        width: 80vw;
+        z-index: 2;
+        margin-left: 7vw;
+    }
+
+    .search3 img {
+        width: 28vw;
+        z-index: 3;
+    margin-top:1.5vw;  
+    }
+
+    .search5 img {
+        width: 22vw;
+        z-index: 3;
+    margin-top:2.5vw;  
+    }
+
+    .search4 img {
+        width: 10vw;
+        z-index: 4;
+        margin-left: 60vw;
+        margin-top:2vw;  
+    }
+    .btn-square-slant {
+        display: inline-block;
+        position: relative;
+        padding: 0.5em 1.8em;
+        text-decoration: none;
+        color: #fff2dc;
+    }
+
+    .btn-square-slant:before {
+        content: " ";
+        position: absolute;
+        bottom: -5px;
+        left: -1px;
+        width: 0;
+        height: 0;
+        border-width: 0 6px 6px 0px;
+        border-style: solid;
+        border-color: transparent;
+        /* border-bottom-color: #FFF; */
+    }
+
+    .btn-square-slant:after {
+        content: " ";
+        position: absolute;
+        top: -1px;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-width: 0px 6px 6px 0px;
+        border-style: solid;
+        /* border-color: #FFF; */
+        border-bottom-color: transparent;
+    }
+
+    .btn-square-slant:active:after,
+    .btn-square-slant:active:before {
+        content: none;
+        /*ボタンを押すと線が消える*/
+    }
+
+    .botton {
+        position: absolute;
+        z-index: 5;
+        background-color: #FFBED8;
+        height: 18vw;
+        width: 80vw;
+        border-radius: 12px;
+        box-shadow: 4px 4px 0px #BFB5A4;
+        padding-top: 3vw;
+    }
+
+    .btn1 {
+        margin-left: -27px;
+        margin-top: 47vw;
+    }
+
+    .btn-square-slant:active {
+        /*ボタンを押したとき*/
+        box-shadow: none;
+        -webkit-transform: translate(4px, 4px);
+        transform: translate(4px, 4px);
+    }
 
 
-    </div>
+    .feature {
+        height: auto;
+    }
+
+    .feature1 img {
+        width: 90vw;
+        margin-top: 20vw;
+    }
+
+    .soon {
+        margin-top:20vw;
+        height:75vw;
+        text-align:center;
+    }
+
+    .greet {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .greet img {
+        width: 93vw;
+        display: flex;
+        margin-left: 7vw;
+    }
+
+    .greeting {
+        width: 73vw;
+        background-color: white;
+        margin-top: 18vw;
+        font-size: 3vw;
+        padding: 4vw;
+        height: 75vw;
+        z-index: 4;
+        box-shadow: 4px 4px 0px #BFB5A4;
+    }
+
+    .saho {
+        margin-left: 1vw;
+        width: 65vw;
+        font-size: 3vw;
+        float: right;
+    }
+
+    .name {
+        font-size: 3vw;
+        margin-top: 63vw;
+        margin-left: 30vw;
+    }
+
+    .btn2 {
+        margin-top: 100vw;
+    }
+
+    .greet1 img {
+        width: 55vw;
+        z-index: 3;
+        margin-top:2.7vw;
+    }
+
+    .greet2 img{
+        width:8vw;
+        z-index: 4;
+        margin-left: 62vw;
+        margin-top:2.5vw;
+    }
+
+    .info {
+        margin-top:50vw;
+
+    }
+
+    .info img {
+        width: 85vw;
+    }
+
+    .btn3 {
+        margin-top: 10vw;
+    }
+
+    .btn4 {
+        margin-top: 33vw;
+    }
+
+    .btn5 {
+        margin-top: 56vw;
+    }
+
+    .infobotton img {
+        height: 7vw;
+        width:auto;
+        display: flex;
+
+    }
+
+    .barr {
+        justify-content: center;
+        display: flex;
+    }
 
 
 
+    .bottom-tab {
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        height:100px;
+    }
 
-</body>
+    .tab-item {
+        width: 60px;
+        height: 60px;
+        background: #14325c;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-style: italic;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), 
+                    -5px -5px 8px rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .tab-item i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .tab-item:hover {
+        transform: scale(1.1);
+    }
+
+    .bar img {
+        display: flex;
+        justify-content: center;
+        height:13vw;
+    }
+
+    .barr {
+        display: flex;
+        justify-content: center;
+        gap:8vw;
+    }
+
+}
