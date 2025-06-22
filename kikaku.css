@@ -1,0 +1,79 @@
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    background-color: #fff2db;
+    height: 2685vw;
+    padding-bottom: 200vw;
+}
+
+.kikaku {
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.kikaku img {
+    width: 40vw;
+}
+
+.searchbar img {
+    width: 90vw;
+}
+
+.center {
+    justify-content: center;
+    display: flex;
+}
+
+.center img{
+    justify-content: center;
+    display: flex;
+}
+
+.ichiran {
+    margin-top:13vw;
+}
+
+.ichiran img {
+    width: 80vw;
+}
+
+.shokai {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+}
+
+.bar img {
+    display: flex;
+    justify-content: center;
+    height: 13vw;
+}
+
+.barr {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+    .bottom-tab {
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        height:100px;
+    }
