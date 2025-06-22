@@ -1,463 +1,54 @@
-@media (max-width: 500px) {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #FFC9DF;
-        height: auto;
-        width: auto;
-    }
-
-    .center {
-        display: flex;
-        justify-content: center;
-    }
-
-    .tiles img {
-        width: 100vw;
-    }
-
-    .blank {
-        height:700px;
-    }
-
-    .nokori {
-        margin-top: 30vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nokori img {
-        width: 80vw;
-    }
-
-
-    .countdown {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        /* gap: 10px; */
-        padding: 20px;
-    }
-
-    .item {
-        display: flex;
-        gap: 8px;
-        margin-top: 30px;
-        justify-content: center;
-    }
-
-    .imagecontain {
-        background: white;
-        color: #123768;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        height: 400px;
-        min-width: 80px;
-    }
-
-    .countdown-item {
-        background: white;
-        color: #123768;
-        padding: 13px;
-        border-radius: 10px;
-        text-align: center;
-        width: 20vw;
-        border: 1px solid black;
-        /* min-width: 80px; */
-    }
-
-    .countdown-item span {
-        display: block;
-        font-size: 7vw;
-        font-weight: bold;
-        font-family: "Caprasimo", serif;
-        opacity: 100%;
-    }
-
-    .countdown-item label {
-        font-size: 14px;
-    }
-
-    .countdown img {
-        margin-top:2vw;
-        margin-bottom:-1vw;
-        height:5vw;
-    }
-    
-    .count img {
-        margin-top:2vw;
-        margin-bottom:-1vw;
-        height:3.5vw;
-    }
-    .left img {
-        margin-top:2vw;
-        margin-bottom:-1vw;
-        height:3.5vw;
-        margin-left:-1vw;
-    }
-
-    .days {
-        background-color: #ffffff;
-        padding-top: 70px;
-        padding-bottom: 8px;
-        width: 79px;
-        border-radius: 7px;
-        margin-right: 6px;
-    }
-
-    .hours {
-        background-color: #ffffff;
-        padding-top: 70px;
-        padding-bottom: 8px;
-        width: 60px;
-        border-radius: 7px;
-        margin-right: 6px;
-    }
-
-    .seconds {
-        background-color: #ffffff;
-        padding-top: 70px;
-        padding-bottom: 8px;
-        width: 60px;
-        border-radius: 7px;
-    }
-
-    .maeoki1 {
-        margin-top:30vw;
-    }
-
-    .maeoki1 img{
-        margin-top:20vw;
-        width:80%;
-        display: flex;
-        justify-content: center;
-        margin-left:10%;
-    }
-    .eclat img{
-        margin-top:20vw;
-        width:50%;
-        display: flex;
-        justify-content: center;
-        margin-left:25%;
-    }
-
-    .in {
-        margin-top: 20vw;
-        background-color: #fff2dc;
-        width: 100vw;
-        height: 90vw;
-        border-radius: 50% 50% 0px 0px;
-        border-top: 1px solid black;
-    }
-
-    .contents img {
-        width: 55vw;
-        margin-top: 40px;
-    }
-
-    .tiles2 img {
-        width: 95vw;
-        margin-top: 5px;
-    }
-
-    .back {
-        background-color: #fff2dc;
-        width: 100vw;
-        height: 2300px;
-    }
-
-    .moveleft {
-        visibility: visible;
-        position: relative;
-        height: 90vw;
-        width: auto;
-        /* opacity: 0;
-        transform: translateX(-50px);
-        transition: all 0.8s ease;
-        z-index: 100; */
-    }
-
-    /* .moveleft.slidein.is-animated {
-        animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-      }
-       
-      @keyframes slideIn {
-        0% {
-          transform: translateX(-50px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-        }
-        40%,100% {
-          opacity: 1;
-        }
-      } */
-
-    /* .moveleft.show {
-        opacity: 1;
-        transform: translateX(0);
-    }  */
-
-    .image {
-        position: absolute;
-
-    }
-
-    .search img {
-        width: 100vw;
-        margin-top: -30vw;
-        z-index: 1;
-    }
-
-    .search2 img {
-        width: 80vw;
-        z-index: 2;
-        margin-left: 7vw;
-    }
-
-    .search3 img {
-        width: 28vw;
-        z-index: 3;
-    margin-top:1.5vw;  
-    }
-
-    .search5 img {
-        width: 22vw;
-        z-index: 3;
-    margin-top:2.5vw;  
-    }
-
-    .search4 img {
-        width: 10vw;
-        z-index: 4;
-        margin-left: 60vw;
-        margin-top:2vw;  
-    }
-    .btn-square-slant {
-        display: inline-block;
-        position: relative;
-        padding: 0.5em 1.8em;
-        text-decoration: none;
-        color: #fff2dc;
-    }
-
-    .btn-square-slant:before {
-        content: " ";
-        position: absolute;
-        bottom: -5px;
-        left: -1px;
-        width: 0;
-        height: 0;
-        border-width: 0 6px 6px 0px;
-        border-style: solid;
-        border-color: transparent;
-        /* border-bottom-color: #FFF; */
-    }
-
-    .btn-square-slant:after {
-        content: " ";
-        position: absolute;
-        top: -1px;
-        right: -5px;
-        width: 0;
-        height: 0;
-        border-width: 0px 6px 6px 0px;
-        border-style: solid;
-        /* border-color: #FFF; */
-        border-bottom-color: transparent;
-    }
-
-    .btn-square-slant:active:after,
-    .btn-square-slant:active:before {
-        content: none;
-        /*ボタンを押すと線が消える*/
-    }
-
-    .botton {
-        position: absolute;
-        z-index: 5;
-        background-color: #FFBED8;
-        height: 18vw;
-        width: 80vw;
-        border-radius: 12px;
-        box-shadow: 4px 4px 0px #BFB5A4;
-        padding-top: 3vw;
-    }
-
-    .btn1 {
-        margin-left: -27px;
-        margin-top: 47vw;
-    }
-
-    .btn-square-slant:active {
-        /*ボタンを押したとき*/
-        box-shadow: none;
-        -webkit-transform: translate(4px, 4px);
-        transform: translate(4px, 4px);
-    }
-
-
-    .feature {
-        height: auto;
-    }
-
-    .feature1 img {
-        width: 90vw;
-        margin-top: 20vw;
-    }
-
-    .soon {
-        margin-top:20vw;
-        height:75vw;
-        text-align:center;
-    }
-
-    .greet {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .greet img {
-        width: 93vw;
-        display: flex;
-        margin-left: 7vw;
-    }
-
-    .greeting {
-        width: 73vw;
-        background-color: white;
-        margin-top: 18vw;
-        font-size: 3vw;
-        padding: 4vw;
-        height: 75vw;
-        z-index: 4;
-        box-shadow: 4px 4px 0px #BFB5A4;
-    }
-
-    .saho {
-        margin-left: 1vw;
-        width: 65vw;
-        font-size: 3vw;
-        float: right;
-    }
-
-    .name {
-        font-size: 3vw;
-        margin-top: 63vw;
-        margin-left: 30vw;
-    }
-
-    .btn2 {
-        margin-top: 100vw;
-    }
-
-    .greet1 img {
-        width: 55vw;
-        z-index: 3;
-        margin-top:2.7vw;
-    }
-
-    .greet2 img{
-        width:8vw;
-        z-index: 4;
-        margin-left: 62vw;
-        margin-top:2.5vw;
-    }
-
-    .info {
-        margin-top:50vw;
-
-    }
-
-    .info img {
-        width: 85vw;
-    }
-
-    .btn3 {
-        margin-top: 10vw;
-    }
-
-    .btn4 {
-        margin-top: 33vw;
-    }
-
-    .btn5 {
-        margin-top: 56vw;
-    }
-
-    .infobotton img {
-        height: 7vw;
-        width:auto;
-        display: flex;
-
-    }
-
-    .barr {
-        justify-content: center;
-        display: flex;
-    }
-
-
-
-    .bottom-tab {
-        z-index: 100;
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 600px;
-        background: #ffffff;
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        height:100px;
-    }
-
-    .tab-item {
-        width: 60px;
-        height: 60px;
-        background: #14325c;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 14px;
-        font-style: italic;
-        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), 
-                    -5px -5px 8px rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-    }
-
-    .tab-item i {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .tab-item:hover {
-        transform: scale(1.1);
-    }
-
-    .bar img {
-        display: flex;
-        justify-content: center;
-        height:13vw;
-    }
-
-    .barr {
-        display: flex;
-        justify-content: center;
-        gap:8vw;
-    }
-
+function updateCountdown() {
+  const targetDate = new Date('2025-09-14T09:00:00').getTime();
+  const now = new Date().getTime();
+  const timeRemaining = targetDate - now;
+
+  if (timeRemaining <= 0) {
+    document.querySelector('.countdown').innerHTML = "Countdown Ended";
+    return;
+  }
+
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  document.getElementById('days').textContent = days;
+  document.getElementById('hours').textContent = hours;
+  document.getElementById('minutes').textContent = minutes;
+  document.getElementById('seconds').textContent = seconds;
 }
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+const input = document.querySelector("input");
+const dataListResult = document.querySelector("#dataListResult");
+
+input.addEventListener("change", (e) => {
+  const value = input.value;
+  dataListResult.innerHTML = value;
+});
+
+
+window.addEventListener("scroll", function () {
+  const elm = document.querySelector(".bottom-tab");
+  const scroll = window.pageYOffset;
+  if (scroll > 2000) {
+    elm.style.opacity = "1";
+    elm.style.zIndex = "1";
+    // console.log(scroll);
+  } else {
+    elm.style.opacity = "0";
+    elm.style.zIndex = "-1";
+    // console.log(scroll);
+  }
+});
+
+
+
+
+
+
+
+
