@@ -170,7 +170,8 @@
     .back {
         background-color: #fff2dc;
         width: 100vw;
-        height: 2300px;
+        height: auto;
+        padding-bottom:100vw;
     }
 
     .moveleft {
