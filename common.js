@@ -52,3 +52,32 @@ window.addEventListener("scroll", function () {
 
 
 
+function changeImage(index) {
+  const container = document.getElementById("imageContainer");
+  container.innerHTML = ""; // 前の画像を消す
+
+  let imagePaths = [];
+
+  // index に応じて画像セットを変える
+  if (index === 1) {
+    imagePaths = ["img/basket.png", "img1b.jpg"];
+  } else if (index === 2) {
+    imagePaths = ["img2a.jpg", "img2b.jpg", "img2c.jpg"];
+  } else if (index === 3) {
+    imagePaths = ["img3a.jpg"];
+  }
+
+  // 縦に画像を並べて表示
+  imagePaths.forEach(path => {
+    const img = document.createElement("img");
+    img.src = path;
+    img.style.display = "block"; // 縦に並べるため
+    img.style.marginBottom = "10px";
+    img.style.width = "300px"; // 必要なら調整
+    container.appendChild(img);
+  });
+  const buttons = document.querySelectorAll(".tab-button");
+  buttons.forEach(btn => btn.classList.remove("active")); // 全部はずす
+  clickedButton.classList.add("active"); // 今押したやつだけ付ける
+
+}
