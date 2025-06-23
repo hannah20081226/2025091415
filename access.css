@@ -1,0 +1,91 @@
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+body {
+    background-color: #fff2db;
+    height: auto;
+    padding-bottom: 50vw;
+}
+
+.access img {
+    width:45vw;
+    margin-top:10vw;
+    margin-left:10vw;
+}
+
+.map {
+    margin-top:15vw;
+}
+
+.center {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    font-size:3vw;
+}
+
+.info2 {
+    margin-top:7vw;
+    font-size: 4vw;
+}
+   .bottom-tab {
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        height:100px;
+    }
+
+    .tab-item {
+        width: 60px;
+        height: 60px;
+        background: #14325c;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-style: italic;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), 
+                    -5px -5px 8px rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .tab-item i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .tab-item:hover {
+        transform: scale(1.1);
+    }
+
+    .bar img {
+        display: flex;
+        justify-content: center;
+        height:13vw;
+    }
+
+    .barr {
+        display: flex;
+        justify-content: center;
+        gap:10vw;
+    }
+
+}
