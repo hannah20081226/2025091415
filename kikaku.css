@@ -193,12 +193,12 @@
     }
 
 
-    .one.active { background-color: #f67280; }
-    .two.active { background-color: #e84a5f; }
-    .three.active { background-color: #9b4d66; }
-    .five.active { background-color: #5e4b6b; }
-    .six.active { background-color: #264653; }
-    .seven.active { background-color: #94eb86; }
+    .one.active { background-color: #f67280; color:white }
+    .two.active { background-color: #e84a5f;color:white }
+    .three.active { background-color: #9b4d66;color:white }
+    .five.active { background-color: #5e4b6b; color:white}
+    .six.active { background-color: #264653; color:white}
+    .seven.active { background-color: #94eb86; color:white}
 
 
     .image-grid img {
