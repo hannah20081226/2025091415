@@ -6,134 +6,113 @@
     }
 
 
-body {
-    background-color: #fff2db;
-    height: 2685vw;
-    padding-bottom: 200vw;
-}
+    body {
+        background-color: #fff2db;
+        height: 2685vw;
+        padding-bottom: 200vw;
+    }
 
-/* ボタンのスタイル */
-.tab-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
+    .button-group {
+        margin-bottom: 20px;
+    }
 
-.tab-button {
-    background-color: #aef;
-    border: none;
-    padding: 6px 8px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+    .button-group button {
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 2vw;
+        font-size: 3vw;
+        font-family: bold;
+    }
 
-.tab-button.active {
-    background-color: #38a;
-    color: white;
-}
+    .button-group button.active {
+        background-color: #88ccff;
+        color: white;
+    }
 
-/* 画像エリア */
-.image-container {
-    /* width: 80%;
-    max-width: 500px; */
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
-    overflow: hidden;
-}
 
-.imageContainer img{
+    .image-grid img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .image-grid {
         display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+        flex-direction: column;
+
+        justify-content: center;
+        /* ← 横並びから縦並びに変更！ */
+        gap: 10px;
+    }
 
 
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: none;
-}
+    .kikaku {
+        display: flex;
+        margin-left: 10vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
 
-.image-container img.active {
-    display: block;
-}
+    .kikaku img {
+        width: 40vw;
+    }
 
+    .searchbar img {
+        width: 90vw;
+    }
 
+    .center {
+        justify-content: center;
+        display: flex;
+    }
 
-.kikaku {
-    display: flex;
-    margin-left: 10vw;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-}
+    .center img {
+        justify-content: center;
+        display: flex;
+    }
 
-.kikaku img {
-    width: 40vw;
-}
+    .ichiran {
+        margin-top: 13vw;
+    }
 
-.searchbar img {
-    width: 90vw;
-}
+    .ichiran img {
+        width: 80vw;
+    }
 
-.center {
-    justify-content: center;
-    display: flex;
-}
+    .shokai {
+        margin-top: 7vw;
+    }
 
-.center img {
-    justify-content: center;
-    display: flex;
-}
+    .bar img {
+        display: flex;
+        justify-content: center;
+        height: 13vw;
+    }
 
-.ichiran {
-    margin-top: 13vw;
-}
+    .barr {
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+    }
 
-.ichiran img {
-    width: 80vw;
-}
-
-.shokai {
-    margin-top: 7vw;
-}
-
-.bar img {
-    display: flex;
-    justify-content: center;
-    height: 13vw;
-}
-
-.barr {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-}
-
-.bottom-tab {
-    z-index: 100;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 600px;
-    background: #ffffff;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-}
+    .bottom-tab {
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+    }
 
 }
 
@@ -164,164 +143,123 @@ body {
     }
 
     body {
-    background-color: #fff2db;
-    height: 2685vw;
-    padding-bottom: 200vw;
-}
+        background-color: #fff2db;
+        height: 2685vw;
+        padding-bottom: 200vw;
+    }
 
-/* ボタンのスタイル */
-.tab-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
+    .button-group {
+        margin-bottom: 20px;
+    }
 
-.tab-button {
-    background-color: #aef;
-    /* border: none;
-    padding: 6px 8px; */
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.tab-button.active {
-    background-color: #38a;
-    color: white;
-}
-
-/* 画像エリア */
-.image-container {
-    /* width: 80%;
-    max-width: 500px; */
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
-    overflow: hidden;
-}
-
-.imageContainer img{
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: none;
-}
-
-.image-container img.active {
-    display: block;
-}
-
-
-
-.kikaku {
-    display: flex;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    margin-top:0px;
-    padding-top:40px;
-}
-
-.kikaku img {
-    width: 180px;
-}
-
-.searchbar img {
-    width: 400px;
-}
-
-.center {
-    justify-content: center;
-    display: flex;
-}
-
-.center img {
-    justify-content: center;
-    display: flex;
-}
-
-.ichiran {
-    margin-top: 60px;
-}
-
-.ichiran img {
-    width: 440px;
-}
-
-.shokai {
-    margin-top: 70px;
-}
-
-.bar img {
-    display: flex;
-    justify-content: center;
-    height: 13vw;
-}
-
-.barr {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-}
-
-.bottom-tab {
-    z-index: 100;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-}
-
-    .tab-button {
-        background-color: #aef;
-        border: none;
-        padding: 6px 8px;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: bold;
+    .button-group button {
+        margin-right: 10px;
+        padding: 10px 20px;
+        /* background-color: #fff; */
+        border: 1px solid #ccc;
         cursor: pointer;
-        transition: background 0.3s;
+    }
+
+    .one {
+        background-color: #f6e4ff;
+    }
+
+    /* ピンク系 */
+    .two {
+        background-color: #ffe2f2;
+    }
+
+    /* 赤ピンク系 */
+    .three {
+        background-color: #ffe6cc;
+    }
+
+    /* ワインレッド系 */
+    .four {
+        background-color: #fff8c9;
+    }
+
+    /* 紫系 */
+    .five {
+        background-color: #cacfff;
+    }
+
+    /* 紺系 */
+    .six {
+        background-color: #cbeeff;
+    }
+    .seven {
+        background-color: #e3fad1;
     }
 
 
-    .tab-button.active {
-        background-color: #38a;
-        color: white;
-    }
+    .one.active { background-color: #f67280; }
+    .two.active { background-color: #e84a5f; }
+    .three.active { background-color: #9b4d66; }
+    .five.active { background-color: #5e4b6b; }
+    .six.active { background-color: #264653; }
+    .seven.active { background-color: #94eb86; }
 
 
-
-
-    .image-container {
-        /* width: 80%;
-    max-width: 500px; */
+    .image-grid img {
+        width: 400px;
         height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
-        overflow: hidden;
+        object-fit: cover;
     }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        /* ← 横並びから縦並びに変更！ */
+        gap: 10px;
+    }
+
+
+    .kikaku {
+        display: flex;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+
+    .kikaku img {
+        width: 180px;
+    }
+
+    .searchbar img {
+        width: 400px;
+    }
+
+    .center {
+        justify-content: center;
+        display: flex;
+    }
+
+    .center img {
+        justify-content: center;
+        display: flex;
+    }
+
+    .ichiran {
+        margin-top: 60px;
+    }
+
+    .ichiran img {
+        width: 440px;
+    }
+
+    .shokai {
+        margin-top: 70px;
+    }
+
+
+
 
 
     .bottom-tab {
@@ -336,7 +274,7 @@ body {
         display: flex;
         justify-content: space-around;
         height: 100px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 
     .tab-item {
@@ -369,7 +307,7 @@ body {
         display: flex;
         justify-content: center;
         height: 60px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .barr {
@@ -379,5 +317,3 @@ body {
     }
 
 }
-
-
