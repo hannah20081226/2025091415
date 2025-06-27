@@ -12,24 +12,21 @@
         padding-bottom: 200vw;
     }
 
-    .button-group {
-        margin-bottom: 20px;
-    }
-
     .button-group button {
         margin-right: 10px;
         padding: 10px 20px;
-        background-color: #eee;
         border: 1px solid #ccc;
         cursor: pointer;
         border-radius: 2vw;
         font-size: 3vw;
         font-family: bold;
+        margin-bottom: 10px;
+        border-radius: 7px;
     }
 
     .button-group button.active {
-        background-color: #88ccff;
         color: white;
+        
     }
 
 
@@ -48,6 +45,100 @@
         gap: 10px;
     }
 
+    .one {
+        background-color: #f6e4ff;
+    }
+
+    /* ピンク系 */
+    .two {
+        background-color: #ffe2f2;
+    }
+
+    /* 赤ピンク系 */
+    .three {
+        background-color: #ffe6cc;
+    }
+
+    /* ワインレッド系 */
+    .four {
+        background-color: #fff3a3;
+    }
+
+    /* 紫系 */
+    .five {
+        background-color: #cacfff;
+    }
+
+    /* 紺系 */
+    .six {
+        background-color: #cbeeff;
+    }
+
+    .seven {
+        background-color: #e3fad1;
+    }
+
+    .button-group {
+        margin-bottom: 20px;
+        margin-left:10vw;
+    }
+    .one.active {
+        background-color: #d278ff;
+        color: white
+    }
+
+    .two.active {
+        background-color: #ff85d2;
+        color: white
+    }
+
+    .three.active {
+        background-color: #ffb162;
+        color: white
+    }
+
+    .four.active {
+        background-color: #f1df3c;
+        color: white
+    }
+
+    .five.active {
+        background-color: #746aff;
+        color: white
+    }
+
+    .six.active {
+        background-color: #31b0ff;
+        color: white
+    }
+
+    .seven.active {
+        background-color: #5edd4a;
+        color: white
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+        .image-grid img {
+        width: 80vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        /* ← 横並びから縦並びに変更！ */
+        gap: 10px;
+    }
 
 
     .kikaku {
@@ -63,6 +154,7 @@
 
     .searchbar img {
         width: 90vw;
+
     }
 
     .center {
@@ -76,7 +168,7 @@
     }
 
     .ichiran {
-        margin-top: 13vw;
+        margin-top: -7vw;
     }
 
     .ichiran img {
@@ -150,6 +242,7 @@
 
     .button-group {
         margin-bottom: 20px;
+
     }
 
     .button-group button {
@@ -158,7 +251,9 @@
         /* background-color: #fff; */
         border: 1px solid #ccc;
         cursor: pointer;
-        margin-left:30px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        border-radius: 7px;
     }
 
     .one {
@@ -177,7 +272,7 @@
 
     /* ワインレッド系 */
     .four {
-        background-color: #fff8c9;
+        background-color: #fff3a3;
     }
 
     /* 紫系 */
@@ -189,18 +284,46 @@
     .six {
         background-color: #cbeeff;
     }
+
     .seven {
         background-color: #e3fad1;
     }
 
 
-    .one.active { background-color: #f67280; color:white }
-    .two.active { background-color: #e84a5f;color:white }
-    .three.active { background-color: #9b4d66;color:white }
-    .four.active { background-color: #6b6b6b;color:white }
-    .five.active { background-color: #5e4b6b; color:white}
-    .six.active { background-color: #264653; color:white}
-    .seven.active { background-color: #94eb86; color:white}
+    .one.active {
+        background-color: #d278ff;
+        color: white
+    }
+
+    .two.active {
+        background-color: #ff85d2;
+        color: white
+    }
+
+    .three.active {
+        background-color: #ffb162;
+        color: white
+    }
+
+    .four.active {
+        background-color: #f1df3c;
+        color: white
+    }
+
+    .five.active {
+        background-color: #746aff;
+        color: white
+    }
+
+    .six.active {
+        background-color: #31b0ff;
+        color: white
+    }
+
+    .seven.active {
+        background-color: #5edd4a;
+        color: white
+    }
 
 
     .image-grid img {
@@ -236,6 +359,7 @@
 
     .searchbar img {
         width: 400px;
+        margin-bottom: 30px;
     }
 
     .center {
@@ -248,16 +372,17 @@
         display: flex;
     }
 
+    /* 
     .ichiran {
-        margin-top: 60px;
-    }
+        margin-top: 30px;
+    } */
 
     .ichiran img {
-        width: 440px;
+        width: 80%;
     }
 
     .shokai {
-        margin-top: 70px;
+        padding-bottom: 10px;
     }
 
 
