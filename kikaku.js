@@ -19,7 +19,7 @@ const imageSets = {
     1: ["img/kangen.png", "img/dance.png", "img/eigoengeki.png", "img/gakubu.png", "img/engeki.png"],
     2: ["img/basket.png", "img/volley.png","img/magic.png","img/sign.png","img/k-on.png","img/seika.png","img/gaxtushou.png"],
     3: ["img/manken.png", "img/engei.png", "img/huwa.png", "img/shugei.png","img/borabora.png","img/huruhon.png","img/diner.png"],
-    4: [,"img/tennis.png","img/futarbucks.png","img/cook.png"],
+    4: ["img/tennis.png","img/futarbucks.png","img/cook.png"],
     5: ["img/tenyaku.png", "img/movie.png","img/art.png","img/news.png","img/photo.png","mg/shodo.png","img/waraukai.png","img/aaf.png"],
     6: ["img/kagaku.png", "img/science.png", "img/astronomy.png","img/bio.png","img/suken.png"],
     7: ["img/game.png", "img/karuta.png", "img/english.png","img/run.png","img/quiz.png","img/anime.png"]
@@ -48,5 +48,4 @@ const imageSets = {
   });
   
   
-
 
