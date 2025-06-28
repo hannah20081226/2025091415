@@ -6,6 +6,7 @@
         padding: 0;
     }
 
+
     body {
 
         margin: 0;
@@ -13,6 +14,7 @@
         background-color: #FFC9DF;
         height: auto;
         width: auto;
+
     }
 
     .center {
@@ -717,7 +719,7 @@
         background-color: #fff2dc;
         width: 500px;
         height: 600px;
-        padding-bottom: 110vw;
+        padding-bottom: 1700px;
     }
 
 
