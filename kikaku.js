@@ -48,4 +48,11 @@ const imageSets = {
   });
   
   
+  const allImages = Object.values(imageSets).flat();
 
+  imageContainer.innerHTML = ""; // 一度中身を消す
+allImages.forEach(src => {
+  const img = document.createElement("img");
+  img.src = src;
+  imageContainer.appendChild(img);
+});
