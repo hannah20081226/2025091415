@@ -1,3 +1,4 @@
+
 @media (max-width: 500px) {
     * {
         box-sizing: border-box;
@@ -8,8 +9,8 @@
 
     body {
         background-color: #fff2db;
-        height: 2685vw;
-        padding-bottom: 200vw;
+        height: auto;
+        padding-bottom: 30vw;
     }
 
     .button-group button {
@@ -236,8 +237,7 @@
 
     body {
         background-color: #fff2db;
-        height: 2685vw;
-        padding-bottom: 200vw;
+        height: auto;
     }
 
     .button-group {
@@ -386,6 +386,10 @@
     }
 
 
+    .beige {
+        background-color: #fff2db;
+        height: 100px;
+    }
 
 
 
@@ -402,6 +406,7 @@
         justify-content: space-around;
         height: 100px;
         margin-left: 0px;
+        margin-top:50px;
     }
 
     .tab-item {
