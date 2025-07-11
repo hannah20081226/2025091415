@@ -6,6 +6,43 @@
         padding: 0;
     }
 
+
+
+    div.animation_box {
+        padding: 10px;
+        animation: fadeIn 2s ease-out 1s 1 normal backwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    div.animation_box2 {
+        padding: 10px;
+        animation: fadein 2s ease-out 1s 1 normal backwards;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
     body {
 
         margin: 0;
@@ -179,33 +216,9 @@
         position: relative;
         height: 90vw;
         width: auto;
-        /* opacity: 0;
-        transform: translateX(-50px);
-        transition: all 0.8s ease;
-        z-index: 100; */
     }
 
-    /* .moveleft.slidein.is-animated {
-        animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-      }
-       
-      @keyframes slideIn {
-        0% {
-          transform: translateX(-50px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-        }
-        40%,100% {
-          opacity: 1;
-        }
-      } */
 
-    /* .moveleft.show {
-        opacity: 1;
-        transform: translateX(0);
-    }  */
 
     .image {
         position: absolute;
@@ -216,6 +229,7 @@
         width: 100vw;
         margin-top: -30vw;
         z-index: 1;
+        margin-left: -10px;
     }
 
     .search2 img {
@@ -312,7 +326,7 @@
     }
 
     .feature1 {
-        width:100vw;
+        width: 100vw;
     }
 
     .feature1 img {
@@ -334,7 +348,7 @@
     .greet img {
         width: 93vw;
         display: flex;
-        margin-left: 7vw;
+        margin-left: 4.9vw;
     }
 
     .greeting {
@@ -351,7 +365,7 @@
     .saho {
         margin-left: 1vw;
         width: 65vw;
-        font-size: 3vw;
+        font-size: 2.8vw;
         float: right;
     }
 
@@ -457,16 +471,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     .bottom-tab {
         z-index: 100;
         position: fixed;
@@ -530,6 +534,16 @@
 
 
 @media (min-width: 500px) {
+
+
+
+
+
+
+
+
+
+
     .bg-wrapper {
         background: url('img/back.png');
         background-position: center;
@@ -748,7 +762,7 @@
     .search5 img {
         width: 100px;
         z-index: 3;
-        margin-top:15px;
+        margin-top: 15px;
     }
 
     .search4 img {
@@ -852,7 +866,7 @@
         background-color: white;
         margin-top: 80px;
         padding: 20px;
-        padding-top:10px;
+        padding-top: 10px;
         height: 360px;
         z-index: 4;
         box-shadow: 4px 4px 0px #BFB5A4;
@@ -959,7 +973,7 @@
         display: flex;
         justify-content: space-around;
         height: 100px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 
 
@@ -993,7 +1007,7 @@
         display: flex;
         justify-content: center;
         height: 60px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .barr {
